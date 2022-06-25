@@ -6,6 +6,7 @@
     --letter: #fff;
     --base-two: #0d0d0d; 
     --invert-color: invert(1);
+    --base-light: #011c3c4d;
 }
 
 * {
@@ -21,7 +22,7 @@ body {
     font-size: 1.2rem;
     line-height: 1.4em;
     color: var(--letter);
-    background-color: var(--base);
+    background-color: var(--base-two);
 }
 
 /* Menu de navegacion */
@@ -30,6 +31,7 @@ body {
     position: fixed;
     padding: 2rem 2rem;
     background-color: var(--base-two);
+    z-index: 200;
 
     display: flex;
     justify-content: space-between;
@@ -40,14 +42,25 @@ body {
     left: 0;
     right: 0;
 
+    border-bottom: 3.5px solid var(--contrast);
+
 }
 
-
-.nav-list a {
+.nav-list a, .logo {
     display: block;
     padding: .3rem 1rem;
     color: var(--letter);
     text-decoration: none;
+}
+
+.logo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--letter);
+    letter-spacing: .55em;
+    text-shadow: 2.3px 1px 2px grey;
+
 }
 
 
@@ -55,6 +68,7 @@ body {
     background-color: var(--contrast);
     border-radius: 5%;
     transition: all 0.25s linear;
+    color: var(--base-two);
 }
 
 
@@ -65,6 +79,7 @@ body {
 }
 
 .nav-list li {
+    font-weight: 600;
     display: inline-block;
 }
 
@@ -95,13 +110,70 @@ body {
     }
     
     .nav-list a {
-        display: block;
         padding: .3rem 2rem;
-        color: var(--letter);
-        text-decoration: none;
     }
     
     .nav-list li {
         display:block;
     }
+
+}
+
+
+/* Header */
+
+.header{ 
+    position: relative;
+    z-index: 100;
+    margin-top: 101px;
+    width: 100%;
+    height: 100vh;
+    /* background-color: var(--base-two); */
+}
+
+.back-image {
+    height: 100%;
+    width: 50%;
+
+    background-image: url(/assets/images/background-1920x1280.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+.about-me {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background-color: var(--base-two);
+
+    top:0;
+    right: 0;
+}
+
+strong {
+    font-weight: inherit;
+}
+
+.p-header{
+    
+    height: 150px;
+    width: 550px;
+    padding-top: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40%;
+    /* background-color: var(--base-light); */
+
+    border-radius: 20px;
+    border-top: 5px solid var(--contrast) ;
+    border-right: 1px solid var(--contrast);
+
+    box-shadow: -5px 4px 15px 3px #77889909;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
 }
