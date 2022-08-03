@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, Javascript, Web, Desarrollo Web, Pagina web, Sitio web">
+    <meta name="description" content="">
+    <meta name="author" content="Raul Aponte">
     <title>Quasar</title>
     <link rel="stylesheet" href="./stylesheet/normalize.css">
     <link rel="stylesheet" href="./stylesheet/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700;800&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <script defer src="./js/script.js"></script>
+    <script defer src="./js/btn-menu.js"></script>
     
 
 </head>
@@ -19,19 +22,43 @@
 <body>
 
     <nav class="nav">
-        <a class="logo" href="/">Quasar</a>
+        <h1 class="title-logo"><a class="logo" href="/">Quasar</a></h1>
         <img id="nav__button-menu" class="nav__button-menu" src="./assets/icons/bars-solid.svg" alt="menu">
 
         <ul id="nav__list" class="nav__list">
             <li class="nav__item"><a class="nav__element" href="/">Inicio</a></li>
             <li class="nav__item"><a class="nav__element" href="#">Habilidades</a></li>
+            <li class="nav__item"><a class="nav__element" href="#">Logros</a></li>
             <li class="nav__item"><a class="nav__element" href="#">Contacto</a></li>
         </ul>
     </nav>
 
     <header class="header">
+        <img class="header__img" src="#" alt="Un hombre programando">
+        <div class="header__info">
+            <h2 class="title">Sobre Quasar</h2>
+            <p class="header_txt">
+                Quasar es una empresa dedicada al desarrollo web frontend, creada y dirigida por Raul Aponte, un venezolano de 19 años de edad<br>
+                Quasar busca dar securidad, calidad y buenos precios a aquellos que
+                desean llevar su negocio al mundo web.   
 
+            </p>
+        </div>
     </header>
+
+    <main>
+        <article class="skills">
+            <header>
+                <h2>Habilidades</h2>
+            </header>
+            <ul class="list">
+                <li class="list__stuff">
+                    <img src="" alt="">
+                    <p class="list__stuff__txt">html</p>
+                </li>
+            </ul>
+        </article>
+    </main>
     
 </body>
 

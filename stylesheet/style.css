@@ -6,7 +6,6 @@
     --letter: #fff;
     --base-two: #0d0d0d; 
     --invert-color: invert(1);
-    --base-light: #011c3c4d;
     --font-title:'Albert Sans', sans-serif;
     --font-text:'Mulish', sans-serif;
 }
@@ -74,6 +73,10 @@ body {
     color: var(--letter);
 }
 
+.title-logo {
+    margin: 0;
+}
+
 .nav__element {
     font-size: 1.2em;
 }
@@ -93,9 +96,11 @@ body {
     filter: var(--invert-color);
 }
 
+/* Fin de menu de Navegacion */
+
 /* Menu de navegacion para dispositivos moviles */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 
     .nav__button-menu {
         display: block;
