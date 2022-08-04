@@ -11,6 +11,7 @@
     <title>Quasar</title>
     <link rel="stylesheet" href="./stylesheet/normalize.css">
     <link rel="stylesheet" href="./stylesheet/style.css">
+    <link rel="stylesheet" href="./stylesheet/media-quaries.css"
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700;800&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -27,7 +28,7 @@
 
         <ul id="nav__list" class="nav__list">
             <li class="nav__item"><a class="nav__element" href="/">Inicio</a></li>
-            <li class="nav__item"><a class="nav__element" href="#">Habilidades</a></li>
+            <li class="nav__item"><a class="nav__element" href="#skills">Habilidades</a></li>
             <li class="nav__item"><a class="nav__element" href="#">Logros</a></li>
             <li class="nav__item"><a class="nav__element" href="#">Contacto</a></li>
         </ul>
@@ -47,8 +48,39 @@
     </header>
 
     <main>
-        <article class="skills">
-            
+        <article id="skills" class="skills">
+            <header>
+                <h2>Habilidades</h2>
+            </header>
+            <div class="list-cards">
+                <article class="card">
+                    <figure class="card__figure">
+                        <img class="card__img" src="./assets/icons/html5-brands.svg" alt="html logo">
+                    </figure>
+                    <p class="card__txt">HTML</p>
+                </article>
+
+                <article class="card">
+                    <figure class="card__figure">
+                        <img class="card__img" src="./assets/icons/css3-alt-brands.svg" alt="css logo">
+                    </figure>
+                    <p class="card__txt">CSS</p>
+                </article>
+
+                <article class="card">
+                    <figure class="card__figure">
+                        <img class="card__img  card--small" src="./assets/icons/js-brands.svg" alt="javascript logo">
+                    </figure>
+                    <p class="card__txt">Javascript</p>
+                </article>
+
+                <article class="card">
+                    <figure class="card__figure">
+                        <img class="card__img card--small" src="./assets/icons/git-alt-brands.svg" alt="git logo">
+                    </figure>
+                    <p class="card__txt">Git</p>
+                </article>
+            </div>
         </article>
     </main>
     

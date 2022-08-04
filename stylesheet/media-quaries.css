@@ -1,0 +1,45 @@
+
+@media (hover:hover) {
+    .header__btn-register:hover{
+        background-color: var(--contrast);
+        transition: all 0.25s linear;
+    }
+
+    .nav__element:hover {
+        border-radius: 0.35em;
+    
+        color: var(--base-two);
+        background-color: var(--contrast);
+    
+        transition: all 0.25s linear;
+    }
+}
+
+@media only screen and (max-width: 777px) {
+
+    .nav__button-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav__list {
+        width: 100%;
+        display: none;
+    }
+
+    .nav__list.show {
+        width: 100%;
+        margin-top: 1rem;
+        display: block;
+    }
+    
+    .nav__element {
+        padding: .3rem 1.5rem;
+    }
+    
+    .nav__item {
+        display:block;
+        margin-left: 3px;
+    }
+
+}

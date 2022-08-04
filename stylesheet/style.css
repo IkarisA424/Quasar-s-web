@@ -1,10 +1,10 @@
 :root {
     scroll-behavior: smooth;
-    --base: #011c3c; 
-    --light: #5a87bf;
-    --contrast: #f28140; 
-    --letter: #fff;
+    --details: #8C2703; 
     --base-two: #0d0d0d; 
+    --contrast: #f28140; 
+    --light: #F2EBDF;
+    --letter: #fff;
     --invert-color: invert(1);
     --font-title:'Albert Sans', sans-serif;
     --font-text:'Mulish', sans-serif;
@@ -82,19 +82,17 @@ body {
     font-weight: 600;
 }
 
-.nav__element:hover {
-    border-radius: 0.35em;
-
-    color: var(--base-two);
-    background-color: var(--contrast);
-
-    transition: all 0.25s linear;
-}
-
 .nav__button-menu {
     display: none;
     height: 25px;
     filter: var(--invert-color);
+}
+
+.nav__element:active{
+    border-radius: 0.35em;
+
+    color: var(--base-two);
+    background-color: var(--contrast);
 }
 
 /* Fin de menu de Navegacion */
@@ -122,7 +120,7 @@ body {
 .header__title {
     font-family: var(--font-title);
     font-size: 2.6rem;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: .6em;
     text-transform: uppercase;
     text-shadow: 1px 1px var(--contrast);
@@ -140,48 +138,60 @@ body {
     border-radius: 0.35em;
     text-decoration: none;
     font-weight: 600;
+    border: 3px solid var(--contrast);
     font-size: 1.5rem;
     letter-spacing: 1px;
     color: var(--letter);
+}
+
+.header__btn-register:active{
     background-color: var(--contrast);
 }
 
-.header__btn-register:hover{
-    background-color: var(--light);
-}
 /* Fin de Header */
 
 /* Habilidades */
 
-/* Fin de Habilidades */
-
-/* Menu de navegacion para dispositivos moviles */
-
-@media only screen and (max-width: 777px) {
-
-    .nav__button-menu {
-        display: block;
-        cursor: pointer;
-    }
-
-    .nav__list {
-        width: 100%;
-        display: none;
-    }
-
-    .nav__list.show {
-        width: 100%;
-        margin-top: 1rem;
-        display: block;
-    }
-    
-    .nav__element {
-        padding: .3rem 1.5rem;
-    }
-    
-    .nav__item {
-        display:block;
-        margin-left: 3px;
-    }
-
+.skills {
+    background-color: #F2EBDF;
+    background-image: url("/assets/images/Coding\ _Monochromatic.svg");
+    background-repeat: no-repeat;
+    background-position: 115% 105%;
+    background-size: 650px;
 }
+
+.list-cards {
+    padding: 3rem 2rem;
+    min-height: calc(100vh - 80.27px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    text-align: center;
+    width: 200px;
+    height: 330px;
+}
+
+.card__figure {
+    margin: 0;
+    width: 100%;
+}
+
+.card__img{
+    width: 200px;   
+    height: 256px;
+    padding: 1rem;
+}
+
+
+.card__txt {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--base-two);
+}
+
+/* Fin de Habilidades */
