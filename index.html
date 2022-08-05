@@ -10,7 +10,9 @@
     <meta name="author" content="Raul Aponte">
     <title>Quasar</title>
     <link rel="stylesheet" href="./stylesheet/normalize.css">
+    <link rel="stylesheet" href="/stylesheet/variables.css">
     <link rel="stylesheet" href="./stylesheet/style.css">
+    <link rel="stylesheet" href="/stylesheet/nav.css">
     <link rel="stylesheet" href="./stylesheet/media-quaries.css"
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,8 +31,8 @@
         <ul id="nav__list" class="nav__list">
             <li class="nav__item"><a class="nav__element" href="/">Inicio</a></li>
             <li class="nav__item"><a class="nav__element" href="#skills">Habilidades</a></li>
-            <li class="nav__item"><a class="nav__element" href="#">Logros</a></li>
-            <li class="nav__item"><a class="nav__element" href="#">Contacto</a></li>
+            <li class="nav__item"><a class="nav__element" href="#logros">Logros</a></li>
+            <li class="nav__item"><a class="nav__element" href="#contacto">Contacto</a></li>
         </ul>
     </nav>
 
@@ -48,10 +50,102 @@
     </header>
 
     <main>
-        <article id="skills" class="skills">
-            <header>
-                <h2>Habilidades</h2>
+        <article class="section">
+
+            <header id="skills"   class="section__header">
+                <h2 class="section__title">Habilidades</h2>
             </header>
+            
+            <div class="list-cards list-cards--skills">
+                <article class="card">
+                    <figure class="card__figure">
+                        <img class="card__img" src="./assets/icons/html5-brands.svg" alt="html logo">
+                    </figure>
+                    <p class="card__txt">HTML</p>
+                </article>
+    
+                <article class="card">
+                    <figure class="card__figure">
+                        <img class="card__img" src="./assets/icons/css3-alt-brands.svg" alt="css logo">
+                    </figure>
+                    <p class="card__txt">CSS</p>
+                </article>
+    
+                <article class="card">
+                    <figure class="card__figure">
+                        <img class="card__img  card--small" src="./assets/icons/js-brands.svg" alt="javascript logo">
+                    </figure>
+                    <p class="card__txt">Javascript</p>
+                </article>
+    
+                <article class="card">
+                    <figure class="card__figure">
+                        <img class="card__img card--small" src="./assets/icons/git-alt-brands.svg" alt="git logo">
+                    </figure>
+                    <p class="card__txt">Git</p>
+                </article>
+            </div>
+        </article>
+
+        
+        <article class="section section--black">
+            <header class="section__header">
+                <h2 class="section__title">Logros</h2>
+            </header>
+            <div id="logros" class="list-cards">
+                <a target="_blank" href="./assets/logros/instagram/instagram.html" class="logros">
+                    <article class="card">
+                        <figure class="card__figure">
+                            <img class="card__img" src="./assets/images/proyect.svg" alt="proyect logo">
+                        </figure>
+                        <p class="card__txt">Instagram</p>
+                    </article>
+                </a>
+    
+                <a target="_blank" href="./assets/logros/reto1/reto1.html" class="logros">
+                    <article class="card">
+                        <figure class="card__figure">
+                            <img class="card__img" src="./assets/images/proyect.svg" alt="proyect logo">
+                        </figure>
+                        <p class="card__txt">Profile</p>
+                    </article>
+                </a>
+    
+                <a target="_blank" href="./assets/logros/reto2/reto2.html" class="logros">
+                    <article class="card">
+                        <figure class="card__figure">
+                            <img class="card__img  card--small" src="./assets/images/proyect.svg" alt="proyect logo">
+                        </figure>
+                        <p class="card__txt">Reto 2</p>
+                    </article>
+                </a>
+    
+                <a target="_blank" href="./assets/logros/reto3/reto3.html" class="logros">
+                    <article class="card">
+                        <figure class="card__figure">
+                            <img class="card__img card--small" src="./assets/images/proyect.svg" alt="proyect logo">
+                        </figure>
+                        <p class="card__txt">Reto 3</p>
+                    </article>
+                </a>
+
+                <a target="_blank" href="./assets/logros/waves/waves.html" class="logros">
+                    <article class="card">
+                        <figure class="card__figure">
+                            <img class="card__img card--small" src="./assets/images/proyect.svg" alt="proyect logo">
+                        </figure>
+                        <p class="card__txt">Waves</p>
+                    </article>
+                </a>
+            </div>
+        </article>
+
+        <article class="section">
+
+            <header id="contacto"   class="section__header">
+                <h2 class="section__title">Contacto</h2>
+            </header>
+            
             <div class="list-cards">
                 <article class="card">
                     <figure class="card__figure">
@@ -59,21 +153,21 @@
                     </figure>
                     <p class="card__txt">HTML</p>
                 </article>
-
+    
                 <article class="card">
                     <figure class="card__figure">
                         <img class="card__img" src="./assets/icons/css3-alt-brands.svg" alt="css logo">
                     </figure>
                     <p class="card__txt">CSS</p>
                 </article>
-
+    
                 <article class="card">
                     <figure class="card__figure">
                         <img class="card__img  card--small" src="./assets/icons/js-brands.svg" alt="javascript logo">
                     </figure>
                     <p class="card__txt">Javascript</p>
                 </article>
-
+    
                 <article class="card">
                     <figure class="card__figure">
                         <img class="card__img card--small" src="./assets/icons/git-alt-brands.svg" alt="git logo">

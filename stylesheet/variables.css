@@ -1,0 +1,11 @@
+:root {
+    scroll-behavior: smooth;
+    --details: #8C2703; 
+    --base-two: #0d0d0d; 
+    --contrast: #f28140; 
+    --light: #F2EBDF;
+    --letter: #fff;
+    --invert-color: invert(1);
+    --font-title:'Albert Sans', sans-serif;
+    --font-text:'Mulish', sans-serif;
+}

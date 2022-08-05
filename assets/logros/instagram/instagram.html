@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="top">
+            <div class="userDetails">
+                <div class="profile_img">
+                    <img class="cover" src="./src/imgs/logo.jpg" alt="profile img">
+                </div>
+                <h3>online_tutoriales<br><span>Patna, India</span></h3>
+            </div>
+            <div>
+                <img class="dot" src="./src/imgs/dot.png" alt="more opcions">
+            </div>
+        </div>
+        <div class="imgBx">
+            <img class="cover" src="./src/imgs/bg.jpg" alt="user's picture">
+        </div>
+        <div class="actionBtns">
+            <div class="left">
+                <img  class="heart" src="./src/imgs/heart.png" alt="like's heart" onclick="likeButton()">
+                <img src="./src/imgs/comment.png" alt="comments">
+                <img src="./src/imgs/share.png" alt="comments">
+            </div>
+            <div class="right">
+                <img src="./src/imgs/bookmark.png" alt="saved">
+            </div>
+        </div>
+        <h4 class="likes"> 3,699 likes</h4>
+        <h4 class="message"><b>online_tutoriales</b> Thanks for your love and supports <span>#css</span> <span>#html</span> <span>#java</span></h4>
+        <h4 class="comments">View all 666 comments</h4>
+        <div class="addComments">
+            <div class="userImg">
+                <img class="cover" src="./src/imgs/user.jpg" alt="user's photo">
+            </div>
+            <input type="text" class="text" placeholder="Add a comment...">
+        </div>
+        <h5 class="postTime">4 hours ago</h5>
+    </div>
+
+    <script>
+        function likeButton(){
+            let heart = document.querySelector('.heart');
+            let likes = document.querySelector('.likes');
+            if(heart.src.match("./src/imgs/heart.png")){
+                heart.src= "./src/imgs/heart_red.png"
+                likes.innerHTML= "3,700 likes";
+            } else {
+                heart.src= "./src/imgs/heart.png"
+                likes.innerHTML="3,699 likes";
+            }
+
+        }
+    </script>
+</body>
+</html>

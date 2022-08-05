@@ -1,17 +1,7 @@
-:root {
-    scroll-behavior: smooth;
-    --details: #8C2703; 
-    --base-two: #0d0d0d; 
-    --contrast: #f28140; 
-    --light: #F2EBDF;
-    --letter: #fff;
-    --invert-color: invert(1);
-    --font-title:'Albert Sans', sans-serif;
-    --font-text:'Mulish', sans-serif;
-}
 
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 
@@ -27,76 +17,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Menu de navegacion */
-
-.nav {
-    position: sticky;
-    top: 0;
-    z-index: 500;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 1rem 1.5rem;
-    
-    background-color: var(--base-two);
-    border-bottom: 3.5px solid var(--contrast);
-}
-
-.logo {
-    font-family: var(--font-title);
-    font-size: 1.6rem;
-    font-weight: 700;
-    letter-spacing: .6em;
-    text-transform: uppercase;
-    
-    color: var(--letter);
-}
-
-.nav__list {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-}
-
-.nav__item {
-    display: inline-block;
-}
-
-.nav__element, 
-.logo {
-    display: block;
-    padding: .3em 1em;
-    text-decoration: none;
-
-    color: var(--letter);
-}
-
-.title-logo {
-    margin: 0;
-}
-
-.nav__element {
-    font-size: 1.2em;
-    font-weight: 600;
-}
-
-.nav__button-menu {
-    display: none;
-    height: 25px;
-    filter: var(--invert-color);
-}
-
-.nav__element:active{
-    border-radius: 0.35em;
-
-    color: var(--base-two);
-    background-color: var(--contrast);
-}
-
-/* Fin de menu de Navegacion */
-
 /* Creacion de Header */
 
 .header{
@@ -107,9 +27,8 @@ body {
 }
 
 .header__info{
-    margin-right: 30px;
-    width: 40%;
-    min-width: 371px;
+    max-width: 40%;
+    min-width: 370px;
     text-align: center;
 }
 
@@ -150,23 +69,38 @@ body {
 
 /* Fin de Header */
 
-/* Habilidades */
-
-.skills {
-    background-color: #F2EBDF;
-    background-image: url("/assets/images/Coding\ _Monochromatic.svg");
-    background-repeat: no-repeat;
-    background-position: 115% 105%;
-    background-size: 650px;
+.section {
+    min-height: calc(100vh - 80.27px);
+    background-color: var(--light);
 }
 
+.section__header{
+    margin: 0;
+    text-align: center;
+    background-color: var(--letter);
+    height: 50px;
+    line-height: 50px;
+    box-shadow: 1px 1px 10px 0px #0d0d0d64;
+}
+
+.section__title {
+    margin: 0;
+    font-family: var(--font-title);
+    font-size: 2.6rem;
+    font-weight: 600;
+    letter-spacing: .6em;
+    text-transform: uppercase;
+    color: var(--base-two);
+}
+
+
 .list-cards {
-    padding: 3rem 2rem;
     min-height: calc(100vh - 80.27px);
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 3rem 2rem;
 }
 
 .card {
@@ -194,4 +128,21 @@ body {
     color: var(--base-two);
 }
 
-/* Fin de Habilidades */
+.list-cards--skills {
+    background: url(/assets/images/DataFlatline.svg) no-repeat;
+    background-position: 140% 190%;
+    background-size: 750px;
+}
+
+.section--black {
+    background-color: var(--base-two);
+}
+
+.section--black .card__txt {
+    color: var(--letter);
+}
+
+.logros {
+    text-decoration: none;
+    display: block;
+}
