@@ -20,7 +20,7 @@ body {
 /* Creacion de Header */
 
 .header{
-    height: calc(100vh - 80.27px);
+    min-height: calc(100vh - 80.27px);
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -37,23 +37,26 @@ body {
 }
 
 .header__title {
+    margin-bottom: .6em;
     font-family: var(--font-title);
     font-size: 2.6rem;
     font-weight: 600;
     letter-spacing: .6em;
     text-transform: uppercase;
     text-shadow: 1px 1px var(--contrast);
+
 }
 
 .header_txt {
-    font-size: 1.8rem;
+    line-height: 1.55em;
+    font-size: 1.4rem;
     padding: 0 1.5em;
 }
 
 .header__btn-register {
     display: inline-block;
     padding: .35em .5em;
-    margin-top: 15px;
+    margin-top: 2em;
     border-radius: 0.35em;
     text-decoration: none;
     font-weight: 600;
