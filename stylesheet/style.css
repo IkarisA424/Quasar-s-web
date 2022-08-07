@@ -20,8 +20,11 @@ body {
 /* Creacion de Header */
 
 .header{
-    min-height: calc(100vh - 80.27px);
+    height: calc(100vh - 80.27px);
+    padding-bottom: 1.5em;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
 }
@@ -33,7 +36,8 @@ body {
 }
 
 .header__img{
-    width: 60%;
+    position: relative;
+    min-width: 55%;
 }
 
 .header__title {
@@ -41,7 +45,7 @@ body {
     font-family: var(--font-title);
     font-size: 2.6rem;
     font-weight: 600;
-    letter-spacing: .6em;
+    letter-spacing: .5em;
     text-transform: uppercase;
     text-shadow: 1px 1px var(--contrast);
 
@@ -132,8 +136,8 @@ body {
 }
 
 .list-cards--skills {
-    background: url(/assets/images/DataFlatline.svg) no-repeat;
-    background-position: 140% 190%;
+    background: url(/assets/images/Coding-Flatline--orange.svg) no-repeat;
+    background-position: 140% 140%;
     background-size: 750px;
 }
 
